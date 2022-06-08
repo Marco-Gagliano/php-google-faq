@@ -4,7 +4,7 @@
 
 $faqs = [
   [
-    "domanda" => '<h2>Come state implementando la recente decisione della Corte di giustizia dell&#39Unione europea (CGUE) relativa al diritto all&#39oblio?</h2>',
+    "domanda" => '<h4>Come state implementando la recente decisione della Corte di giustizia dell&#39Unione europea (CGUE) relativa al diritto all&#39oblio?</h4>',
 
     "risposta" => '<p>La recente <a href="#">decisione della Corte di giustizia dell&#39Unione europea</a> ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.</p>
     
@@ -18,7 +18,7 @@ $faqs = [
   ],
 
   [
-    "domanda" => '<h2>Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?</h2>',
+    "domanda" => '<h4>Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?</h4>',
 
     "risposta" => '<p>Sappiamo che la sicurezza e la privacy sono importanti per te e lo sono anche per noi. Per noi è imperativo offrire un&#39elevata sicurezza e assicurarti che le tue informazioni sono al sicuro e accessibili quando ne hai bisogno.</p>
 
@@ -30,7 +30,7 @@ $faqs = [
   ],
 
   [
-    "domanda" => '<h2>Perché il mio account è associato a un paese?</h2>',
+    "domanda" => '<h4>Perché il mio account è associato a un paese?</h4>',
     "risposta" => '<p>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:</p>
     <ol>
       <li>
@@ -55,20 +55,22 @@ $faqs = [
   ],
 
   [
-    "domanda" => '<h2>Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?</h2>',
+    "domanda" => '<h4>Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?</h4>',
     "risposta" => '<p>I risultati di ricerca di Google rispecchiano i contenuti pubblicamente disponibili sul Web. I motori di ricerca non possono rimuovere i contenuti direttamente dai siti web, quindi rimuovere risultati di ricerca da Google non consente di rimuovere i contenuti dal Web. Se desideri rimuovere qualcosa dal Web, devi <a href="#">contattare il webmaster</a> del sito su cui sono pubblicati i contenuti e chiedergli di apportare una modifica. Inoltre, se, ai sensi delle leggi europee per la protezione dei dati, desideri richiedere la rimozione di determinate informazioni su di te visualizzate nei risultati di ricerca di Google, <a href="#">fai clic qui.</a> Una volta che i contenuti saranno stati rimossi e che Google avrà rilevato l&#39aggiornamento, le informazioni non verranno più visualizzate nei risultati di ricerca di Google. In caso di una richiesta di rimozione urgente, è inoltre possibile <a href="#">visitare la nostra pagina di assistenza per avere ulteriori informazioni.</a></p>'
   ],
 
   [
-    "domanda" => '<h2>Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?</h2>',
+    "domanda" => '<h4>Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?</h4>',
     "risposta" => '<p>In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l&#39indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di <a href="#">URL referrer.</a> Talvolta, l&#39URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell&#39URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili <a href="#">qui.</a> Le query di ricerca o le informazioni contenute nell&#39URL referrer potrebbero essere disponibili mediante Google Analytics o un&#39API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all&#39 esatte parole chiave che hanno determinato il clic su un annuncio.</p>'
   ],
 ];
 
 // var_dump($faqs);
 
+//
+    
+  //
 ?>
-
 
 
 <!DOCTYPE html>
@@ -77,6 +79,8 @@ $faqs = [
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -87,12 +91,78 @@ $faqs = [
 </head>
 <body>
 
-  <?php
-    foreach ($faqs as $article) {
-      echo $article['domanda'];
-      echo $article['risposta'];
-    }
-  ?>
+  <header class="container-fluid title my-2">
+
+    <div class="short-menu">
+      <div>
+        <a href="#"><img src="img/google.jpg" alt="Google Logo"></a>
+        <span>Privacy e termini</span>
+      </div>
+      
+      <div class="login-menu">
+        <a class="menu-user" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+        <a class="login-user" href="#">M</a>
+      </div>
+    </div>
+
+    <div class="menu">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Introduzione</a>
+            <a href="#">Norme sulla privacy</a>
+            <a href="#">Termini di servizio</a>
+            <a href="#">Tecnologie</a>
+            <a class="active" href="#">Domande frequenti</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="faqs-text">
+      <?php
+        foreach ($faqs as $article) {
+        echo $article['domanda'];
+        echo $article['risposta'];
+        }
+      ?>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="container">
+      <div class="footer-menu">
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Google</a>
+              <a href="#">Tutto su google</a>
+              <a href="#">Privacy</a>
+              <a href="#">Termini</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="login-menu">
+        <a class="menu-user" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+        <a class="login-user" href="#">M</a>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  
 
 </body>
 </html>

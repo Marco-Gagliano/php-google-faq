@@ -1,4 +1,89 @@
+/* GENERAL PRESETS */
+
 a {
   text-decoration: none;
-
+  width: 20%;
 }
+
+/* /GENERAL PRESETS */
+
+
+/* /HEADER */
+
+header {
+ border-bottom: 1px solid #CBCBCB;
+}
+
+.short-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-user {
+  font-size: 30px;
+  padding-left: 15px;
+  color: #5F6368;
+}
+
+.login-user {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #FFFFFF;
+  background-color: #00897B;
+  padding: 9px 13px;
+  border-radius: 100px;
+}
+
+.title img {
+  width: 6%;
+}
+
+.title span {
+  color: #5F6368;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu a {
+  color: #5F6368;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 45px;
+  padding-bottom: 14px;
+}
+
+.active {
+  color: #3367D6;
+  border-bottom: 6px solid #3367D6;
+  
+}
+
+/* /HEADER */
+
+
+/* /MAIN */
+
+.container {
+  padding: 100px 170px;
+}
+
+.faqs-text p {
+  padding-bottom: 20px;
+}
+
+/* /MAIN */
+
+
+/* FOOTER  */
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* /FOOTER  */
