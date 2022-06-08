@@ -5,6 +5,11 @@ a {
   width: 20%;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 /* /GENERAL PRESETS */
 
 
@@ -44,10 +49,7 @@ header {
   font-weight: 400;
 }
 
-.menu ul {
-  list-style: none;
-  padding: 0;
-}
+
 
 .menu a {
   color: #5F6368;
@@ -68,7 +70,7 @@ header {
 
 /* /MAIN */
 
-.container {
+main .container {
   padding: 100px 170px;
 }
 
@@ -81,9 +83,25 @@ header {
 
 /* FOOTER  */
 
+footer .container-fluid {
+  padding: 0;
+  background-color: #F5F5F5;
+}
+
+footer .container {
+  padding: 0 170px;
+}
+
 .footer-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.footer-menu a {
+  color: #5F6368;
+  padding-right: 15px;
 }
 
 /* /FOOTER  */

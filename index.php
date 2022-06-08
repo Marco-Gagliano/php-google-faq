@@ -67,9 +67,6 @@ $faqs = [
 
 // var_dump($faqs);
 
-//
-    
-  //
 ?>
 
 
@@ -121,6 +118,7 @@ $faqs = [
 
   </header>
 
+
   <main>
     <div class="container">
       <div class="faqs-text">
@@ -134,35 +132,37 @@ $faqs = [
     </div>
   </main>
 
+
   <footer>
     <div class="container-fluid">
       <div class="container">
-      <div class="footer-menu">
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Google</a>
-              <a href="#">Tutto su google</a>
-              <a href="#">Privacy</a>
-              <a href="#">Termini</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <div class="footer-menu">
+
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Google</a>
+                <a href="#">Tutto su google</a>
+                <a href="#">Privacy</a>
+                <a href="#">Termini</a>
+              </li>
+            </ul>
+          </nav>
       
-      <div class="login-menu">
-        <a class="menu-user" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-        <a class="login-user" href="#">M</a>
+          <div class="language">
+            <select name="language" id="language">
+              <option value="Italiano">Italiano</option>
+              <option value="English">English</option>
+              <option value="Español">Español</option>
+              <option value="Français">Français</option>
+            </select>
+          </div>
+
+        </div>
       </div>
     </div>
 
-      </div>
-    </div>
   </footer>
-
-
-  
 
 </body>
 </html>
